@@ -1,137 +1,54 @@
-/* Resetowanie domyślnych stylów przeglądarki */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Stylowanie ciała strony */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-/* Nagłówek */
 header {
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
-header h1 {
-    font-size: 2em;
-}
-
-nav ul {
+header nav ul {
     list-style-type: none;
+    padding: 0;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
     margin-right: 20px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-/* Sekcje */
 section {
-    margin: 40px 0;
+    padding: 20px;
 }
 
-section h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
 }
 
-/* Sekcja "O mnie" */
-#about p {
-    font-size: 1.1em;
-    color: #333;
+.product img {
+    width: 100px;
+    height: 100px;
 }
 
-/* Sekcja "Usługi" */
-#services ul {
-    list-style-type: square;
-    margin-left: 20px;
+#cart-items li {
+    margin: 5px 0;
 }
 
-#services li {
-    font-size: 1.2em;
-}
-
-/* Formularz kontaktowy */
-form {
+#checkout form {
     display: flex;
     flex-direction: column;
 }
 
-form label {
-    font-size: 1.1em;
-    margin: 10px 0 5px;
-}
-
-form input, form textarea {
+#checkout form input,
+#checkout form button {
+    margin-bottom: 10px;
     padding: 10px;
-    font-size: 1em;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 1.1em;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-form button:hover {
-    background-color: #555;
-}
-
-/* Stopka */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    margin-top: 40px;
-}
-/* Styl dla mobilnych urządzeń */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 1.5em;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    section {
-        padding: 10px;
-    }
-
-    form input, form textarea {
-        width: 100%;
-    }
-
-    form button {
-        width: 100%;
-    }
+    font-size: 16px;
 }
